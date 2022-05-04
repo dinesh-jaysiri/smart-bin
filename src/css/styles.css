@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("fonts/AvenirLTStd-Black.woff2") format("woff2"),
+        url("fonts/AvenirLTStd-Black.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("fonts/AvenirLTStd-Book.woff2") format("woff2"),
+        url("fonts/AvenirLTStd-Book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("fonts/AvenirLTStd-Roman.woff2") format("woff2"),
+        url("fonts/AvenirLTStd-Roman.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+.App {
+    height: 100vh;
+    background: #ededed;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a.active {
+    color: rgb(134, 10, 10);
+}
+
+/* list */
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    color:#333;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.list__item {
+    font-size: 1.6rem;
+    margin-left: 5rem;
+}
+
+/* typography */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Avenir", Arial, Helvetica, sans-serif;
+}
+
+.page-container {
+    min-width: 1220px;
+    width: 1220px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    height: 100%;
+    padding-top: 70px;
+}
+
+.page-name {
+    font-size: 25px;
+    font-weight: 400;
+    color: #333;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+/* top bar */
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+}
+
+.topbar {
+    height: 70px;
+    background:#daf7a6 ;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    font-size: 17px;
+    color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+.topbar__container{
+    min-width: 1220px;
+    width: 1220px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.brand_logo__image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.brand_logo__label {
+    font-size: 20px;
+    font-weight: 500;
+}
+.brand_logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+/* bin box */
+
+.bin-box {
+    width: 270px;
+    max-height: 527px;
+    height: 525px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.2);
+}
+
+/* search box */
+
+.search-box {
+ border: 0;
+ height: 44px;
+ display: flex;
+ border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+ align-items: center;
+ justify-content: space-between;
+ padding-right: 10px;
+ width: 270px;
+}
+
+.search-input {
+border: none;
+height: 30px;
+font-size: 18px;
+font-weight: 300;
+padding-left: 20px;
+outline: none;
+width: 200px;
+}
+
+.search-img {
+width: 25px;
+height: 25px;
+}
+
+/* bin item */
+.bin-item {
+    display: flex;
+    border-bottom:1px solid rgba(17, 17, 17, 0.2);
+    height: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    
+    
+}
+.bin-item:hover {
+    cursor: pointer;
+    background:#e9e9e9 ;
+}
+
+.bin-item.active {
+   background:#e9e9e9;
+}
+
+.bin-img {
+    width: 25px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+
+
+.bin-item__title {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.bin-item__value {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+/* chart box */
+
+.chart-box {
+    width: 100%;
+    height: 525px;
+    max-height: 527px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.2);
+}
+
+.box-container{
+    display: flex;
+}
+
+/* mapbox */
+
+.map-box {
+    width: 100%;
+    height: 525px;
+    max-height: 527px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.2);
+    overflow: hidden;
+}
+
+/* home page */
+
+
+.home-img{
+    width:100%;
+    height: 615px;
+    object-fit: cover;
+}
+
+.contact-text {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 400px;
+    font-size: 18px;
+}
